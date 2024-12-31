@@ -16,7 +16,6 @@ def quantized_int8(data: Tensor) -> Tensor:
     # test
 if __name__ == '__main__':
     DWC_filter_3 = torch.randn(256, 3)
-
     print(np.max(DWC_filter_3.numpy()))
     out = quantized_int8(DWC_filter_3)
     print(out)

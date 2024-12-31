@@ -153,7 +153,7 @@ if __name__ == "__main__":
         output = accumulation(output, 1)
         np.save('layer1_out', output.numpy())
         output = quantized_int8(output.float())
-        np.save('PWC_1a_int_out', output.numpy())
+        np.save('(PWC_1a_int_out', output.numpy())
 
     # layer 2 input size:64, 16, 56, 56
     try:
